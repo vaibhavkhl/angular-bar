@@ -6,14 +6,15 @@ barApp.directive('databar', function() {
     restrict: "A",
     replace: true,
     scope: {
-      elementOneCount: '=elementOne',
-      lastElementCount: '=lastElementCount'
+      elementOneCount: '=elementOneCount',
+      lastElementCount: '=lastElementCount',
+      elementTwoCount: '=elementTwoCount'
     },
     link: function(scope, element) {
     scope.elementOneWidth = scope.elementOneCount/scope.lastElementCount * 100;
-    console.log(scope.elementOneCount);
-    console.log(scope.lastElementCount);
+    scope.elementTwoWidth = scope.elementTwoCount/scope.lastElementCount * 100;
     console.log(scope.elementOneWidth);
+    console.log(scope.elementTwoWidth);
     },
     templateUrl: 'data-bar.html'
   };
@@ -21,5 +22,6 @@ barApp.directive('databar', function() {
 
 barApp.controller('mainCtrl', function($scope) {
   $scope.elementOneCount = 30;
+  $scope.elementTwoCount = 100;
   $scope.lastElementCount = 300;
 });

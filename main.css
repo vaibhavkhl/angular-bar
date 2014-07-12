@@ -7,9 +7,24 @@ body {
   height: 30px;
   background: white;
   margin: 20px;
+  position: relative;
 }
 
 .green {
 	background: green;
 	height: 30px;
+	color: white;
+	position: absolute;
+	top: 0;
+	text-align: right;
+	z-index: 10;
+}
+
+.red {
+	background: red;
+	height: 30px;
+  color: white;
+  position: absolute;
+	top: 0;
+	text-align: right;
 }
