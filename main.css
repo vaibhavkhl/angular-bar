@@ -3,7 +3,7 @@ body {
 }
 
 .data-bar {
-  width: 300px;
+  width: 50%;
   height: 30px;
   background: white;
   margin: 20px;
@@ -23,8 +23,8 @@ body {
 .red {
 	background: red;
 	height: 30px;
-  color: white;
-  position: absolute;
+	color: white;
+	position: absolute;
 	top: 0;
 	text-align: right;
 }

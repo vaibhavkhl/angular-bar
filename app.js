@@ -21,7 +21,7 @@ barApp.directive('databar', function() {
 });
 
 barApp.controller('mainCtrl', function($scope) {
-  $scope.elementOneCount = 30;
-  $scope.elementTwoCount = 100;
+  $scope.elementOneCount = 150;
+  $scope.elementTwoCount = 180;
   $scope.lastElementCount = 300;
 });
