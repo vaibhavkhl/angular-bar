@@ -1,0 +1,15 @@
+body {
+  background: gray;
+}
+
+.data-bar {
+  width: 300px;
+  height: 30px;
+  background: white;
+  margin: 20px;
+}
+
+.green {
+	background: green;
+	height: 30px;
+}
