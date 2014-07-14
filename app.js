@@ -6,9 +6,11 @@ barApp.directive('databar', function() {
     restrict: "A",
     replace: true,
     scope: {
-      elementOneCount: '=elementOneCount',
-      lastElementCount: '=lastElementCount',
-      elementTwoCount: '=elementTwoCount'
+      elementOneCount: '=',
+      lastElementCount: '=',
+      elementTwoCount: '=',
+      elementOneClass: '=',
+      elementTwoClass: '='
     },
     link: function(scope, element) {
     var calculateWidth = function() {
